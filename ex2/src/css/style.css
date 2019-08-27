@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Calligraffiti';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Calligraffiti-webfont.woff') format('woff');
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+header {
+	border-bottom: 3px solid;
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+main {
+  font-size: 40px;
+  text-transform: capitalize;
+  font-family: 'Calligraffiti';
+  padding: 20px;
+}
+
+footer {
+  background-color: black;
+  bottom: 0;
+  color: #f4e824;
+  font-size: 20px;
+  height: 25vh;
+  margin: 0;
+  position: absolute;
+  width: 100vw;
+}
