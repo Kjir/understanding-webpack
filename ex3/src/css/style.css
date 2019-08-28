@@ -6,7 +6,10 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  height: 100vh;
 }
 
 img {
@@ -16,11 +19,13 @@ img {
 
 header {
 	border-bottom: 3px solid;
+  flex: 1 25%;
 	margin-bottom: 45px;
 	text-align: center;
 }
 
-main {
+#app {
+  flex: 4 50%;
   font-size: 40px;
   text-transform: capitalize;
   font-family: 'Calligraffiti';
@@ -29,11 +34,65 @@ main {
 
 footer {
   background-color: black;
-  bottom: 0;
   color: #f4e824;
+  flex: 1 25%;
   font-size: 20px;
-  height: 25vh;
   margin: 0;
-  position: absolute;
   width: 100vw;
+  min-height: 25vh;
+}
+
+nav a {
+  margin: 3px;
+}
+
+.books {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.books li {
+  flex: 1 0 50%;
+}
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li {
+  padding: 15px;
+  border: 1px dashed black;
+  margin: 5px;
+}
+
+.book {
+  border-radius: 5px;
+  box-shadow: 5px 5px grey;
+  margin: 30px;
+  min-width: 50%;
+  overflow: auto;
+}
+
+.book:hover {
+  box-shadow: 5px 5px turquoise;
+}
+
+.book img {
+  border-radius: 5px;
+  vertical-align: top;
+}
+
+.book .title {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.book .author {
+  color: grey;
+  display: inline-block;
+  font-size: 15px;
+  margin-left: 15px;
 }

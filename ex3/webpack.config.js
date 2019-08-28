@@ -1,6 +1,16 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  output: {
+    publicPath: '/'
+  },
+  devServer: {
+    compress: true,
+    historyApiFallback: {
+      index: '/index.html'
+    },
+    publicPath: '/'
+  },
   module: {
     rules: [
       { test: /\.css$/, use: ['style-loader', 'css-loader'] },
@@ -8,5 +18,5 @@ module.exports = {
       { test: /\.js$/, use: 'babel-loader' }
     ]
   },
-  plugins: [new HtmlWebpackPlugin()]
+  plugins: [new HtmlWebpackPlugin({ title: 'Bookstore' })]
 };

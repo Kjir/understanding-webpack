@@ -21,5 +21,8 @@
         "serve": "webpack-dev-server",
         "dev": "yarn webpack --mode development",
         "prod": "yarn webpack --mode production"
+    },
+    "dependencies": {
+        "navigo": "^7.1.2"
     }
 }
