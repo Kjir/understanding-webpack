@@ -1,0 +1,7 @@
+{
+  "name": "webpack-course-ex3-reuse-code",
+  "version": "1.0.0",
+  "main": "user.js",
+  "author": "Stéphane Bisinger <stephane.bisinger@homegate.ch>",
+  "license": "MIT"
+}
