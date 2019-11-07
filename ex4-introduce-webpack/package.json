@@ -1,0 +1,13 @@
+{
+  "name": "webpack-course-ex4-introduce-webpack",
+  "version": "1.0.0",
+  "main": "user.js",
+  "author": "Stéphane Bisinger <stephane.bisinger@homegate.ch>",
+  "license": "MIT",
+  "scripts": {
+    "webpack": "webpack",
+    "dev": "yarn webpack --mode development",
+    "prod": "yarn webpack --mode production",
+    "none": "yarn webpack --mode none"
+  }
+}
