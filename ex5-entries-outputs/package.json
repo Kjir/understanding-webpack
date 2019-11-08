@@ -1,0 +1,17 @@
+{
+  "name": "webpack-course-ex5-entries-outputs",
+  "version": "1.0.0",
+  "main": "user.js",
+  "author": "Stéphane Bisinger <stephane.bisinger@homegate.ch>",
+  "license": "MIT",
+  "scripts": {
+    "webpack": "webpack",
+    "dev": "yarn webpack --mode development",
+    "prod": "yarn webpack --mode production",
+    "none": "yarn webpack --mode none"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
