@@ -1,0 +1,29 @@
+.author::before {
+  content: 'Author';
+  text-orientation: upright;
+  writing-mode: sideways-lr;
+  background-color: violet;
+  height: 100px;
+}
+
+.user::before {
+  content: 'User';
+  text-orientation: upright;
+  writing-mode: sideways-lr;
+  background-color: orange;
+  height: 100px;
+}
+
+.author {
+  border: 5px solid violet;
+  width: 100px;
+  margin: 3em;
+  height: 100px;
+}
+
+.user {
+  border: 5px solid orange;
+  width: 100px;
+  margin: 3em;
+  height: 100px;
+}
