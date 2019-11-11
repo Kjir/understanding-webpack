@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var moment = require('moment');
 var bookList = require('./books.json');
 
 var pageSize = 10;
@@ -21,6 +22,11 @@ function createBookCard(book) {
   bookCard.appendChild(image);
   bookCard.appendChild(title);
   bookCard.appendChild(author);
+
+  var publishedDate = document.createElement('p');
+  var elapsedTime = moment([book.year]).fromNow();
+  publishedDate.innerText = `Published ${elapsedTime}`;
+  bookCard.appendChild(publishedDate);
 
   return bookCard;
 }
