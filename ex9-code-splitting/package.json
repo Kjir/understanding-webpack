@@ -1,5 +1,5 @@
 {
-  "name": "webpack-course-ex8-tree-shaking",
+  "name": "webpack-course-ex9-code-splitting",
   "version": "1.0.0",
   "main": "user.js",
   "author": "Stéphane Bisinger <stephane.bisinger@homegate.ch>",
@@ -8,10 +8,12 @@
     "webpack": "webpack",
     "dev": "yarn webpack --mode development",
     "prod": "yarn webpack --mode production",
-    "none": "yarn webpack --mode none"
+    "none": "yarn webpack --mode none",
+    "serve": "webpack-dev-server"
   },
   "devDependencies": {
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }
