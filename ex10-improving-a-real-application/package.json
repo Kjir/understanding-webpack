@@ -23,7 +23,7 @@
         "prod": "yarn webpack --mode production"
     },
     "dependencies": {
-        "moment": "^2.24.0",
+        "moment": "^2.29.2",
         "navigo": "^7.1.2"
     }
 }
